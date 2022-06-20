@@ -856,3 +856,81 @@ let resultFilter1 = animals2.map((value) => {
     return value.species
 });
 console.log(resultFilter1);
+
+
+//71 - Javascript Function Declaration vs Function Expression - (தமிழில்)
+
+let funExp = (((value1, value2) => {
+    return value1 + value2;
+}));
+console.log(funExp(155, 176));
+
+
+//#72 - Javascript Hoisting - (தமிழில்) (Tamil) | JavaScript Course
+//Function Declaration
+
+//declaration
+addNum();
+
+function addNum(){
+    console.log('adding number from func. declaration')
+}
+
+//expression
+// funcExpression();
+
+// //Function expression
+// let funcExpression = function(){
+//     console.log('adding number from func. expression');
+// };
+//hoisting is not working function expression
+
+
+
+//#73 - Javascript Self Invoking Functions - (IIFE) - (தமிழில்) (Tamil) | JavaScript Course
+
+//Immediately Invoked Function expression ( IIFE )
+let funExp2 = (((value1, value2) => {
+    return value1 + value2;
+}));
+console.log(funExp2(155, 176));
+
+//#74 - Javascript Function Arguments - (தமிழில்) (Tamil) | JavaScript Course
+//fuction argument
+
+let expenceResult = ((value1, value2, value3) => {
+    return value1 + value2 + value3
+});
+console.log(expenceResult(150, 150, 150));
+
+//perameter in javascript
+//receiving value 
+
+//argument in javascript
+//receiving value
+
+function myExp(){
+    let total = 0;
+    for(let value of arguments){
+        total += value;
+    }
+    return total;
+};
+console.log(myExp(100,100));
+
+
+//#75 - Javascript Rest Operator - (தமிழில்) (Tamil) | JavaScript Course
+//Rest Operator
+let restOpe = ((...expences) => {
+    let resul = expences.reduce((a,b) => {
+        return a + b;
+    });
+    console.log(resul)
+});
+console.log(restOpe(100,200));
+
+//#76 - Javascript Default Parameters - (தமிழில்) (Tamil) | JavaScript Course
+// Function Default Parameter
+
+
+
