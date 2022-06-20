@@ -932,5 +932,76 @@ console.log(restOpe(100,200));
 //#76 - Javascript Default Parameters - (தமிழில்) (Tamil) | JavaScript Course
 // Function Default Parameter
 
+//data property
+//accessor method
 
+let stu = {
+    firstName: 'Sivakumar',
+    lastName: 'Muthiyalu',
+    get fullName(){
+        return `${stu.firstName} ${stu.lastName}`;
+    },
+    set fullName(value){
+        let values = value.split(" ");
+        console.log(values);
+    }
+};
+stu.fullName = "Saraswathi Muthiyalu";
+console.log("result:", stu.fullName);
+
+
+//#78 - Javascript Error Handling (Try, Throw, Catch) - (தமிழில்) (Tamil) | JavaScript Course
+
+// let stu = {
+//     firstName: 'Sivakumar',
+//     lastName: 'Muthiyalu',
+//     get fullName(){
+//         return `${stu.firstName} ${stu.lastName}`;
+//     },
+//     set fullName(value){
+//         let values = value.split(" ");
+//         console.log(values);
+//     }
+// };
+// stu.fullName = 48;
+// console.log("result:", stu.fullName);
+
+
+//#79 - Javascript Scopes (Global vs Local Scope) - (தமிழில்) (Tamil) | JavaScript Course
+
+//global scope
+{var msg2 = "Hi";}
+console.log(msg2);
+
+//local scope
+// {let msg = "Hello World";}
+// console.log(msg);
+
+//#80 - Difference between Javascript var & let keyword - (தமிழில்) (Tamil) | JavaScript
+
+//var vs let
+
+var color1 = 'red';
+let color2 = 'red';
+
+let resultColor = ((value) => {
+    for(let i = 0; i <= 10; i++){
+        console.log(i);
+    }
+});
+resultColor(1);
+
+//#81 - Understanding Javascript 'this' keyword - (தமிழில்) (Tamil) | JavaScript Course
+//method = obj
+//function = global  ( window, global)
+
+let purple1 = {
+    name: 'sivakumar',
+    profession: 'Front-end Developer',
+    sayHi: function(){
+        console.log('Hi ' + purple1.name);
+    }
+}
+
+console.log(purple1.sayHi());
 
